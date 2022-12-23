@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #444;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 0.9em;
+  color: #888;
+  text-decoration: none;
+  padding: 20px 10px;
+  display: block;
+  transition: all 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #333;
+  background-color: #eee;
+}
+
+.banner {
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  animation: appear 2000ms forwards;
+}
+
+.banner h1 {
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 0;
+  padding: 200px 0 0 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner p {
+  font-size: 1.2em;
+  color: rgb(43, 43, 53);
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services {
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+
+.services h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.services p {
+  font-size: 1.2em;
+  color: #888;
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.services .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .grid .card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
